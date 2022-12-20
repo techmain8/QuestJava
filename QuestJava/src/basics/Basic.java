@@ -1,4 +1,4 @@
-package javaPractice;
+package basics;
 
 public class Basic 
 {

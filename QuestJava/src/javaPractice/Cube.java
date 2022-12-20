@@ -6,9 +6,9 @@ public class Cube
 	{
 		Scanner scanner = new Scanner (System.in);
 		System.out.println("enter the number to find cube : ");
-		int a = scanner.nextInt();
+		int num = scanner.nextInt();
 		scanner.close();
-		int b = a * a * a;
-		System.out.println("the Cube of the number is :" + b);
+		int cube = num * num * num;
+		System.out.println("the Cube of the number is :" + cube);
 	}
 } 

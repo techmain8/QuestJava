@@ -6,6 +6,16 @@ public class FibonacciSeriesUsingMethods
 {
 	static int i, count = 0, num1 = 0, num2 = 0, num3;
 	
+	static void  fib(int num1, int num2, int count) 
+	{
+		for (i = num1; i < count+2; ++i)// loop starts from 2 because 0 and 1 are already printed
+		{
+			num3 = num1 + num2;
+			System.out.print(" " + num3);
+			num1 = num2;
+			num2 = num3;
+		}
+	}
 	public static void main(String[] args) 
 	{
 		Scanner sc = new Scanner(System.in);
@@ -19,18 +29,5 @@ public class FibonacciSeriesUsingMethods
 		sc.close();
 		
 		fib(num1,num2,count);
-
-	}
-
-	 static void  fib(int num1, int num2, int count) 
-	{
-		for (i = num1; i < count+2; ++i)// loop starts from 2 because 0 and 1 are already printed
-		{
-			num3 = num1 + num2;
-			System.out.print(" " + num3);
-			num1 = num2;
-			num2 = num3;
-		}
-	
 	}
 }

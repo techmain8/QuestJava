@@ -1,6 +1,6 @@
 package javaPractice;
 import java.util.Scanner;
-public class Rem
+public class Reminder
 {
 	public static void main(String[] args)
 	{
