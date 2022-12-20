@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class SearchNumberInArray 
 {
 
+	
 	public static void main(String[] args) 
 	{
 		int i,number,size;
@@ -27,7 +28,8 @@ public class SearchNumberInArray
 		for(i=0; i<size; i++) 
 		{
 			int temp = a[i];
-			if(temp == number) {
+			if(temp == number) 
+			{
 				System.out.println("Element Found At: "+ (i+1));
 			}
 		}
