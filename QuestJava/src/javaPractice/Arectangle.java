@@ -6,11 +6,11 @@ public class Arectangle
 	{
 		Scanner input = new Scanner(System.in);
 		System.out.println("enter the length : ");
-		int len = input.nextInt();
+		int length = input.nextInt();
 		System.out.println("enter the width :");
-		int wid = input.nextInt();
+		int width = input.nextInt();
 		input.close();
-		int P = len * wid ;
-		System.out.println("the Area of the rectangle is :" + P);
+		int Area = length * width ;
+		System.out.println("the Area of the rectangle is :" + Area);
 	}
 }

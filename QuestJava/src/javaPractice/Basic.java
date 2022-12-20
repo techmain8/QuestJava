@@ -1,7 +1,9 @@
 package javaPractice;
 
-public class Basic {
-	public static void main(String[] args) {
+public class Basic 
+{
+	public static void main(String[] args) 
+	{
 		//Declaring variables
 		int num1,num2,sum;
 		char ch ;

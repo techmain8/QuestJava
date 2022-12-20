@@ -5,6 +5,13 @@ import java.util.Scanner;
 public class ReverseAnArray 
 {
 	static int length ;
+	static void display(int lenght,int[] num) 
+	{
+		for(int i=0; i<lenght; i++) 
+		{
+			System.out.println("The Array Of "+length+" Elements are: "+ num[i]);
+		}
+	}
 	public static void main(String[] args) 
 	{
 		Scanner sc = new Scanner(System.in);
@@ -28,13 +35,5 @@ public class ReverseAnArray
 			num[length-j-1]= temp;
 		}
 		display(length,num);
-	}
-	
-	static void display(int lenght,int[] num) 
-	{
-		for(int i=0; i<lenght; i++) 
-		{
-			System.out.println("The Array Of "+length+" Elements are: "+ num[i]);
-		}
 	}
 }

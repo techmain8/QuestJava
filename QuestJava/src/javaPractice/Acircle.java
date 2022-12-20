@@ -6,11 +6,11 @@ public class Acircle
 	{
 		Scanner input = new Scanner(System.in);
 		System.out.println("enter the width : ");
-		int wid = input.nextInt();
+		int width = input.nextInt();
 		System.out.println("enter the height :");
-		int hei = input.nextInt();
+		int heigth = input.nextInt();
 		input.close();
-		int A = wid * hei ;
-		System.out.println("the Area of the circle is :" + A);
+		int Area = width * heigth ;
+		System.out.println("the Area of the circle is :" + Area);
 	}
 }
