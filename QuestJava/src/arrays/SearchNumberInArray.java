@@ -4,8 +4,25 @@ import java.util.Scanner;
 
 public class SearchNumberInArray 
 {
-
 	
+	public static void sort(int size,int[] array) 
+	{
+		int i;
+		for(i =0 ; i<size; i++) 
+		{
+			for(int j=i+1; j<size; j++) 
+			{
+				if(array[i] > array[j]) 
+				{
+					int temp = array[i];
+					array[i] = array[j];
+					array[j]= temp;
+				}
+			}
+		}
+		for(int num:array)
+			System.out.print(num);
+	}
 	public static void main(String[] args) 
 	{
 		int i,number,size;
@@ -21,9 +38,11 @@ public class SearchNumberInArray
 			a[i]=scan.nextInt();
 		}
 		
+		sort(size,a);
+		
+
 		System.out.println("Enter The Element To Search: ");
 		number = scan.nextInt();
-		
 		
 		for(i=0; i<size; i++) 
 		{
