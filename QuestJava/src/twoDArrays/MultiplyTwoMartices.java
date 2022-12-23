@@ -19,15 +19,15 @@ public class MultiplyTwoMartices
 	}
 	static void multiply(int[][]array,int[][] second) 
 	{
-		int[][] sum = new int[row][column];
+		int[][] multiply = new int[row][column];
 		for(int i=0; i<array.length; i++) 
 		{
 			for(int j=0; j< array[i].length; j++) 
 			{
-				sum[i][j] = second[i][j]  * array[i][j];
+				multiply[i][j] = second[i][j]  * array[i][j];
 			}
 		}
-		display(sum);
+		display(multiply);
 	}
 	public static void main(String[] args) 
 	{
