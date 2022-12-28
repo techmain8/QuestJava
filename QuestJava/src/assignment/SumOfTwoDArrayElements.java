@@ -1,11 +1,10 @@
-package twoDArrays;
-
+package assignment;
 
 import java.util.Scanner;
 
-public class StoreAndRead 
+public class SumOfTwoDArrayElements 
 {
-	static int row,column;
+	static int row,column,sum=0;
 	
 	public static void display(int[][] array) 
 	{
@@ -17,6 +16,17 @@ public class StoreAndRead
 			}
 			System.out.println();
 		}
+	}
+	static void sum(int[][]array) 
+	{
+		for(int i=0; i<array.length; i++) 
+		{
+			for(int j=0; j< array[i].length; j++) 
+			{
+				sum = sum +array[i][j];
+			}
+		}
+		System.out.println("The Sum Of Array Elements is : "+ sum);
 	}
 	public static void main(String[] args) 
 	{
@@ -37,9 +47,9 @@ public class StoreAndRead
 				array[i][j]= scan.nextInt();
 			}
 		}
-		System.out.println("\nThe Entered Two DArray is: \n");
+		System.out.println("\nThe Entered Two D-Array is: ");
 		display(array);
-		
+		sum(array);
 	}
 
 }

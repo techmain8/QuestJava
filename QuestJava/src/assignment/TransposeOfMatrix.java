@@ -1,10 +1,10 @@
-package twoDArrays;
+package assignment;
 
 import java.util.Scanner;
 
-public class SumOfTwoDArrayElements 
+public class TransposeOfMatrix 
 {
-	static int row,column,sum=0;
+static int row,column;
 	
 	public static void display(int[][] array) 
 	{
@@ -17,17 +17,7 @@ public class SumOfTwoDArrayElements
 			System.out.println();
 		}
 	}
-	static void sum(int[][]array) 
-	{
-		for(int i=0; i<array.length; i++) 
-		{
-			for(int j=0; j< array[i].length; j++) 
-			{
-				sum = sum +array[i][j];
-			}
-		}
-		System.out.println("The Sum Of Array Elements is : "+ sum);
-	}
+	
 	public static void main(String[] args) 
 	{
 		Scanner scan = new Scanner(System.in);
@@ -47,9 +37,19 @@ public class SumOfTwoDArrayElements
 				array[i][j]= scan.nextInt();
 			}
 		}
-		System.out.println("\nThe Entered Two D-Array is: ");
+		
+		int[][] transpose = new int[row][column];
+		for(int i=0; i< row; i++) 
+		{
+			for(int j=0; j<column; j++) 
+			{
+				transpose[i][j]=array[j][i];
+			}
+		}
+		System.out.println("\nThe Entered Two DArray is: \n");
 		display(array);
-		sum(array);
+		System.out.println("\nThe Two DArray is: \n");
+		display(transpose);
 	}
 
 }

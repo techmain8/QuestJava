@@ -1,4 +1,4 @@
-package twoDArrays;
+package assignment;
 
 import java.util.Scanner;
 
