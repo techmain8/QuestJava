@@ -30,6 +30,7 @@ public class EmployeeDetailsDriver
 			
 			scan[i]= new EmployeeDetails(name,Empid,designation,phoneNo);
 		}
+		
 		System.out.println("\nThe Entered Details Are: ");
 		for(int i=0; i<size; i++) 
 		{

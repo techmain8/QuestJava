@@ -1,5 +1,6 @@
-package oopsPractice;
+package drivers;
 import java.util.Scanner;
+import oopsPractice.GreaterNumber;
 public class GreaterNumberDriver 
 {
 	static int num1,num2,num3;
