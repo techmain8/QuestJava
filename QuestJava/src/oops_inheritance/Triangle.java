@@ -10,7 +10,7 @@ public class Triangle extends Dimension
 
 	public void AreaOfTriangle()
 	{
-		Area = getlength()* getwidth();
+		Area = (getlength()* getwidth())/2;
 	}
 	public void displayTriangle() 
 	{

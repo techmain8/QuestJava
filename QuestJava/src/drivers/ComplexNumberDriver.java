@@ -1,7 +1,7 @@
-package assignment;
+package drivers;
 
 import java.util.Scanner;
-
+import assignment.ComplexNumber;
 public class ComplexNumberDriver 
 {
 	static float num1,num2,num3,num4,num5,num6;
@@ -28,6 +28,6 @@ public class ComplexNumberDriver
 		
 		
 		ComplexNumber output = input1.addComplexNumber(input2,input3);
-		System.out.println("The Sum of ComplexNumber Is: "+output.real+" + "+output.imaginary);
+		System.out.println("The Sum of ComplexNumber Is: "+output.getReal()+" + "+output.getImaginary());
 	}
 }

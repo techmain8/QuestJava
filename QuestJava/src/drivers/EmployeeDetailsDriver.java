@@ -1,6 +1,7 @@
-package assignment;
+package drivers;
 
 import java.util.Scanner;
+import assignment.EmployeeDetails;
 
 public class EmployeeDetailsDriver 
 {
