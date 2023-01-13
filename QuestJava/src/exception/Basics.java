@@ -1,5 +1,5 @@
 package exception;
-import oops_inheritance.Shape;
+
 public class Basics 
 {
 	public static void main(String[] args) throws ClassNotFoundException 
@@ -11,7 +11,8 @@ public class Basics
 		System.out.println("Division Is : "+div);
 		
 		//class not found exception
-		Class classfromforName = Class.forName("Shape");
+		@SuppressWarnings("rawtypes")
+		Class classfromforName = Class.forName("oops_inheritance.Shape");
 		System.out.println(classfromforName);
 	}
 	

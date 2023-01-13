@@ -1,4 +1,4 @@
-package basics;
+package assignment;
 
 import java.util.Scanner;
 
@@ -8,7 +8,7 @@ public class StringsPractice
 	{
 		int length = 0;
 		char[] words = str.toCharArray();
-		for(char i : words) 
+		for(@SuppressWarnings("unused") char i : words) 
 		{
 			length++;
 		}
@@ -260,7 +260,7 @@ public class StringsPractice
 	    	String[] sarray = s9.split(" ");
 	    	count=0;
 	    			
-	    	for(String s:sarray)
+	    	for(@SuppressWarnings("unused") String s:sarray)
 	    	{
 	    		count++;
 	    	}
