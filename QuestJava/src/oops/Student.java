@@ -1,5 +1,7 @@
 package oops;
 
+import java.util.Arrays;
+
 //Model class Student
 public class Student {
 
@@ -15,7 +17,7 @@ public class Student {
 		this.name = name;
 		this.rollNo = rollNo;
 	}
-
+	
 	public String getName() {
 		return name;
 	}
@@ -41,14 +43,15 @@ public class Student {
 	}
 
 	public int getTotalMarks() {
-
 		int sum = 0;
-
 		for (int mark : this.marks)
 			sum += mark;
-		
 		return sum;
-
 	}
 
+	@Override
+	public String toString() {
+		return "Student [name=" + name + ", rollNo=" + rollNo + ", marks=" + Arrays.toString(marks) + "]";
+	}
+	
 }

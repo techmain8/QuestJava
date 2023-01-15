@@ -60,9 +60,10 @@ public class HashsetExample
 		Iterator itr2 = hs2.iterator();
 		while(itr2.hasNext())
 		{
+			Object test = itr2.next();
 			if(hs2.contains(true)) 
 			{
-				hs2.remove(true);
+				hs2.remove(test);
 				hs2.add(false);
 			}
 			System.out.println(hs2);

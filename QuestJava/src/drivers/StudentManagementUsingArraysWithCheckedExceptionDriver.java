@@ -103,9 +103,9 @@ public class StudentManagementUsingArraysWithCheckedExceptionDriver
 				}
 				case 5:{
 					System.out.println("Enter the roll no of Student : ");
-					int rollNo = scanner.nextInt();
+					int RollNo = scanner.nextInt();
 					
-					dao.deleteStudent(rollNo);					
+					dao.deleteStudent(RollNo);					
 					break;
 				}
 				case 6:{

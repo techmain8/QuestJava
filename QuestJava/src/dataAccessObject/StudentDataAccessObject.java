@@ -60,8 +60,6 @@ public class StudentDataAccessObject {
   		
   		if(student.getRollNo() == rollNo) 
   			return student;
-  		
-  		
   	}
   	
   	return null;
@@ -85,7 +83,7 @@ public class StudentDataAccessObject {
 		}
   }
   
-  @SuppressWarnings("null")
+
   public void deleteStudent(int rollNo)
   {
 	  Student student = this.getStudent(rollNo);
@@ -98,16 +96,25 @@ public class StudentDataAccessObject {
 			System.out.println(student.getRollNo()+" | "+student.getName());
 			
 			Student temp[] = new Student[length];
+			
 			for(int i=0; i<length; i++) 
 			{
 				temp[i]= students[i];
 			}
+			System.out.println();
+			for(Student studnet:temp) 
+			{
+				if(studnet == null) 
+					continue;						
+				System.out.println("This is Inside temp\n"+studnet.getRollNo()+" | "+studnet.getName());
+			}	
 			Student students[] = null;
-			students = new Student[students.length];
+			students = new Student[length];
 			for (int j=0; j<length; j++)
 			{
-				if(getStudent(rollNo).equals(temp[j]))
+				if(getStudent(rollNo).equals(temp[rollNo]))
 				{
+					j++;
 					continue;
 				}
 				students[j]= temp[j];
