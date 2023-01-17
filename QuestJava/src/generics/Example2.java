@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class Example2<t>
 {
 
+	@SuppressWarnings("unchecked")
 	t data = (t) new Object[5];
 	public static void main(String[] args) 
 	{

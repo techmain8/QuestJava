@@ -26,7 +26,7 @@ public class StudentRepositry
 		try(ObjectInputStream instream = new ObjectInputStream(new FileInputStream("File.txt")))
 		{
 			Object obj;
-			int i;
+		
 			System.out.println(instream.available());
 			
 			obj=instream.readObject();

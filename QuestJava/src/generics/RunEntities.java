@@ -7,6 +7,7 @@ public class RunEntities
 	public static void main(String[] args) 
 	{
 		int length= 2;
+		@SuppressWarnings("unused")
 		Scanner scan = new Scanner(System.in);
 		
 //		Repositry<Entities> entity = new Repositry<>( new Entities[length]);

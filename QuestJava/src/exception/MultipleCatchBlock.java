@@ -17,7 +17,8 @@ public class MultipleCatchBlock
 	        age=scan.nextInt();
 	        for(int i=0; i<10; i++)
 	        	phone[i]= scan.nextLong();
-	        int i= age/0;
+	        @SuppressWarnings("unused")
+			int i= age/0;
 	    } 
 		catch(ArithmeticException ae) {
 			System.out.println("Inside ArithmeticException Bloack: "+ae);

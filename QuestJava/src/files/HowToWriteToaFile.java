@@ -10,6 +10,7 @@ public class HowToWriteToaFile
 {
 	public static void main(String[] args) throws IOException 
 	{
+		@SuppressWarnings("unused")
 		String s = "This Is Done By AlexAbhi:";
 		// for writing into file 
 		File file = new File("C:\\Users\\ALEXABHI88\\Desktop\\Quest Global\\cmdprograms\\Text.txt");

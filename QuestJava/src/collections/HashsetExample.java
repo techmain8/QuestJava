@@ -6,6 +6,7 @@ import java.util.Iterator;
 
 public class HashsetExample 
 {
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public static void main(String[] args) 
 	{
 		HashSet<Contact> hs = new HashSet<Contact>();

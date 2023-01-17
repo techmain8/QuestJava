@@ -4,6 +4,7 @@ package generics;
 
 public class GenericsExample<operation> 
 {
+	@SuppressWarnings("unused")
 	private operation value1,value2,sum;
 	
 	

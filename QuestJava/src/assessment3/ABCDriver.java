@@ -150,8 +150,10 @@ public class ABCDriver
 					
 					System.out.println("Salary Calculating:....");
 					System.out.println("Enter the sales of employee "+abc.getPosition()+"/"+abc.getLength());
+					@SuppressWarnings("unused")
 					int sales = scanner.nextInt();
 					
+					@SuppressWarnings("unused")
 					Employee employee[] = abc.getEmployee();
 					
 					
