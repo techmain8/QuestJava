@@ -16,7 +16,7 @@ public class Repositry<Entities>
 	
 	public void add(int index,Entities item)
 	{
-		this.array[index]=item;
+		this.array[index++]=item;
 	}
 	
 }

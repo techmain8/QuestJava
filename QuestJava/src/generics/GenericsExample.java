@@ -1,6 +1,6 @@
 package generics;
 
-import oops.Student;
+
 
 public class GenericsExample<operation> 
 {

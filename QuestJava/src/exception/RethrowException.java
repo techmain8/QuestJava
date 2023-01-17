@@ -31,9 +31,11 @@ public class RethrowException
 		} 
 		catch(Exception e) 
 		{
+			System.out.println(e);
 			System.out.println("Caught in main");
 			System.out.println("Exception handeled");
 		}
+		
 		System.out.println("Thank You");
 	}
 }

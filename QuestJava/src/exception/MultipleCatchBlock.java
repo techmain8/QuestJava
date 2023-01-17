@@ -14,7 +14,7 @@ public class MultipleCatchBlock
 		System.out.println("To Check Mulitple Exception'S.");
 		System.out.println("Enter The Age,phone: ");
 		try {
-	        age =scan.nextInt();
+	        age=scan.nextInt();
 	        for(int i=0; i<10; i++)
 	        	phone[i]= scan.nextLong();
 	        int i= age/0;
