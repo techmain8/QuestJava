@@ -1,1 +1,5 @@
+Assignment : 
+- Read data from user and write it to the file.
+- Read data from file and count number of lines present in the file.(new line is denoted by \n). Also display word count in each line (you can use split() of String class).
+- Store the Employee objects in file. Retrieve them and arrange in ascending order on employee id.
 this is an example of writing a file using bufferedoutputStream file
