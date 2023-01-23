@@ -45,7 +45,7 @@ public class StringsPractice
 		}
 	public static void main(String[] args) 
 	{
-
+		
 	    	int i,flag=1,len1 = 0,len2 =0,len3 = 0,count=0,len5,len6,len7,len8,len9;
 			String s1,s2,s3,s4 ="",s5,s6,s7,s8,s9,s10,s_word;
 			char ch;

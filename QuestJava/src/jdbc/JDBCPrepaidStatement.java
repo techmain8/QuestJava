@@ -2,21 +2,19 @@ package jdbc;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 
-//JAVA DATABASE CONNECTIVITY API(APPLICATION PROGRAMMING INTERFACE)
-public class JDBCstatments 
-{
-	
+public class JDBCPrepaidStatement {
+
 	@SuppressWarnings("unused")
 	public static void main(String[] args) 
 	{
-		String name ="Suresh";
-		int age=23;
-		float score=89.3f;
-		int rollno =6;
+		String name ="Abhishek";
+		int age=25;
+		float score=88.8f;
+		int rollno =9;
 		
 		//Initialization for connecting to database 
 		final String USERNAME = "root";
@@ -26,20 +24,13 @@ public class JDBCstatments
 		
 		
 		//SQL commands as String
-		final String SQL = "INSERT INTO students_tb(fullname,age,score) VALUES('stanner',34,92.5)";
+		final String SQL = "INSERT INTO students_tb(fullname,age,score,rollNo) VALUES(?,?,?,?)";
 		
-		final String SQL2 ="INSERT INTO students_tb(fullname,age,score) VALUES('"+name+"',"+age+","+score+")";
+		final String SQL2 = "UPDATE students_tb SET fullname = ?,age=? ,score=?   WHERE rollno = ?";
 		
-		final String SQL3 = "UPDATE students_tb SET fullname = '"+name+"',age=24 ,score=75.2   WHERE rollno = 8";
+		final String SQL3 = "DELETE FROM students_tb WHERE rollno = ?";
 		
-		final String SQL4 = "DELETE FROM students_tb WHERE rollno = "+rollno;
-		
-		final String SQL5 = "DELETE FROM students_tb WHERE fullname LIKE '%s%' ";
-																	// %s% -means anything before and after s 
-																	// %s - anything before s 
-																	// s% - anything after s  
-																	// * - means everything 
-		final String SQL6 ="SELECT * FROM students_tb";
+		final String SQL4 = "SELECT * FROM students_tb";
 		
 		try 
 		{
@@ -54,20 +45,20 @@ public class JDBCstatments
 		
 		
 			/********EXECUTE SQL QUERIES HERE********/
-		
-			//create a statement object 
-			Statement statement = connection.createStatement();
-		
-			//execute the query using object 
-			//statement.executeUpdate(SQL);
-//			int noOfRowsAffected = statement.executeUpdate(SQL4);
-											//executeUpdate is only of insert ,update and delete statements 
 			
-			ResultSet queryCheck = statement.executeQuery(SQL6);
-											//executeQuery is for storeing the resultant values of the query table
-											// which will be stored in ResulSet class ....
-		
-			//TO VERIFY THE EXECUTIION 
+			//create a statement object 
+			PreparedStatement prepaidstatement = connection.prepareStatement(SQL4);
+			//select numbers according to the number of question marks in query statement 
+//			prepaidstatement.setString(1,name);
+//			prepaidstatement.setInt(2,age);
+//			prepaidstatement.setFloat(3, score);
+//			prepaidstatement.setInt(1, rollno);
+			
+			ResultSet queryCheck = prepaidstatement.executeQuery();
+			
+//			int noOfRowsAffected = prepaidstatement.executeUpdate();
+//			
+//			//TO VERIFY THE EXECUTIION 
 //			if(noOfRowsAffected>0)
 //			{
 //				System.out.println("Rows Affeceted: "+noOfRowsAffected);
@@ -86,9 +77,7 @@ public class JDBCstatments
 				System.out.println("\n");
 			}
 			
-			//CLOSE THE CONNECTION ALWAYS
-			queryCheck.close();
-			statement.close();
+			prepaidstatement.close();
 			connection.close();
 		}
 		catch(ClassNotFoundException c)
@@ -101,11 +90,7 @@ public class JDBCstatments
 			System.out.println(s);
 			s.printStackTrace();
 		}
-		
-		
-		
-		
-		
+	
 	}
 
 }
