@@ -32,7 +32,7 @@ public class SQLInjectionsStatement
 			int noOfRowsAffected = preparedstatement.executeUpdate();
 			
 			ResultSet rs = preparedstatement.executeQuery();
-			
+			preparedstatement.setString(1, name);
 			
 			
 			// TO VERIFY THE EXECUTIION 

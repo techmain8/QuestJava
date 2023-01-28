@@ -10,15 +10,21 @@ public class Student
 		double totalMarks;
 		double percentage;
 		
-		public Student(int rollNo,String name,float[] marks) 
+//		public Student(int rollNo,String name,float[] marks) 
+//		{
+//		    this.rollNo = rollNo;
+//		    this.name = name;
+//		    this.marks = marks;
+//		    this.totalMarks = calculateTotalMarks();
+//		    this.percentage = calculatePercentage();
+//		}
+		public Student(int rollNo, String name, double totalMarks) 
 		{
-		    this.rollNo = rollNo;
-		    this.name = name;
-		    this.marks = marks;
-		    this.totalMarks = calculateTotalMarks();
-		    this.percentage = calculatePercentage();
+			this.rollNo = rollNo;
+			this.name = name;
+			this.totalMarks = totalMarks;
 		}
-
+		
 		public double calculateTotalMarks() 
 		{
 		    double total = 0;
@@ -28,6 +34,8 @@ public class Student
 		    }
 		    return total;
 		}
+
+
 
 		public double calculatePercentage() 
 		{
@@ -61,8 +69,14 @@ public class Student
 
 		@Override
 		public String toString() {
-			return "Student [rollNo=" + rollNo + ", name=" + name + ", marks=" + Arrays.toString(marks)
-					+ ", totalMarks=" + totalMarks + ", percentage=" + percentage + "]";
+			return "Student [rollNo=" + rollNo + ", name=" + name + ", totalMarks=" + totalMarks + "]";
 		}
+
+//		@Override
+//		public String toString() {
+//			return "Student [rollNo=" + rollNo + ", name=" + name + ", marks=" + Arrays.toString(marks)
+//					+ ", totalMarks=" + totalMarks + ", percentage=" + percentage + "]";
+//		}
+		
 		
 	}
