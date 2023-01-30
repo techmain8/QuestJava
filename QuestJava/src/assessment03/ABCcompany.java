@@ -1,4 +1,4 @@
-package assessment3;
+package assessment03;
 import java.util.Arrays;
 //DataaccessObject 
 import java.util.Scanner;

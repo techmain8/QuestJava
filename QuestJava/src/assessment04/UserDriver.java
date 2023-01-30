@@ -1,4 +1,4 @@
-package assessment4;
+package assessment04;
 
 //- Counts total number of words present in the file. DONE
 //- Reads a word from user and count its occurrences in the file. DONE

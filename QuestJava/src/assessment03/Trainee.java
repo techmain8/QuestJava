@@ -1,15 +1,13 @@
-package assessment3;
+package assessment03;
 //child class of Employee
-public class Permanent extends Employee implements EmployeeSalary 
+public class Trainee extends Employee implements EmployeeSalary 
 {
-	
-	
-	public Permanent(String name, int id, String email, String type, String address,int sales) {
+
+	public Trainee(String name, int id, String email, String type, String address) {
 		super(name, id, email, type, address);
-		this.sales= sales;
+		
 	}
-	
-	
+
 	//Function Overriding
 	@Override
 	public void calculateSalary() 
@@ -28,6 +26,5 @@ public class Permanent extends Employee implements EmployeeSalary
 		}
 		
 	}
-
-
 }
+

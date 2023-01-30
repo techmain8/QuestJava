@@ -1,4 +1,4 @@
-package assessment3;
+package assessment03;
 
 import java.util.Scanner;
 //Task 1 : Store details of 10 employees. done 

@@ -1,4 +1,4 @@
-package assessment3;
+package assessment03;
 
 //pojo class 
 public class Employee 
