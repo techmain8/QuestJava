@@ -14,13 +14,14 @@ public class ABCFinancialService
 
 	static Connection conn = null;
 	static Statement stmt = null;
+	
 	/*
+	//MySQL queries to run 
 	CREATE DATABASE bank;
 	use bank;
 	CREATE TABLE accounts (
 	  account_number VARCHAR(20) PRIMARY KEY,
-	  balance DOUBLE NOT NULL
-	);
+	  balance DOUBLE NOT NULL);
 	*/
 	public static void connectToDb() 
 	{
@@ -29,7 +30,7 @@ public class ABCFinancialService
 			Class.forName(JDBC_DRIVER);
 			System.out.println("Connecting to database...");
 			conn = DriverManager.getConnection(URL, USERNAME, PASSWORD);
-			
+			System.out.println("Connection Succefull...");
 		} 
 		catch (Exception e) 
 		{
